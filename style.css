@@ -3,7 +3,6 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-
 }
 
 img {
@@ -13,7 +12,6 @@ img {
 a{
   display: inline-block;
 }
-
 
 /*Universal Styles*/
 
@@ -26,7 +24,8 @@ body {
 /*Header and Footer*/
   header {
     background-color: black;
-      color: white;}
+    color: white;
+  }
 
   footer {
     background-color: black;

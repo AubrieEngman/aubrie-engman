@@ -1,0 +1,33 @@
+/*CSS Reset*/
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+a{
+  display: inline-block;
+}
+
+
+/*Universal Styles*/
+
+body {
+  font-family: 'Pacifico', sans-serif;
+  color: #16a085;
+  font-size: 1.2rem;
+}
+
+/*Header and Footer*/
+  header {
+    background-color: black;
+      color: white;}
+
+  footer {
+    background-color: black;
+  }

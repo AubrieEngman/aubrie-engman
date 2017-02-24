@@ -1,8 +1,9 @@
 /*CSS Reset*/
-{
-  margin:0;
-  padding:0;
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing:border-box;
+  border: red solid 1px;
 }
 
 img {
@@ -11,6 +12,9 @@ img {
 
 a{
   display: inline-block;
+  color: white;
+  text-decoration: none;
+
 }
 
 /*Universal Styles*/
@@ -20,6 +24,81 @@ body {
   color: #16a085;
   font-size: 1.2rem;
 }
+
+h1 {
+  font-size: 6rem;
+  color: white;
+  padding: 5%;
+}
+
+h2{
+  font-size: 4rem;
+  color: #e74c3c ;
+  padding: 0.5%;
+  margin: .15%;
+
+}
+
+section, footer {
+  padding: 10vh 10vw;
+}
+
+.plain {
+    min-height: 100vh;
+    padding: 5%;
+    position: relative;
+    background-color: black;
+
+}
+
+.left-image {
+    min-height: 100vh;
+    padding: 5%;
+    position: relative;
+    background-color: white;
+    background-image: url(../images/itinerary.jpeg);
+
+}
+
+.centered{
+  text-align: center;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.padding {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 25vh;
+  padding-bottom: 15vh;
+}
+
+.top-banner{
+  min-Height: 100vh;
+  background-image: url(../images/institute-of-code-pool.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  color:#fff;
+
+/*These are my Nav links*/
+
+nav a{
+  font-size: 2rem;
+  color: teal;
+  padding: 2%;
+  text-decoration:none;
+
+
+}
+
+nav a:hover{
+  color: white;
+
+}
+
+
 
 /*Header and Footer*/
   header {

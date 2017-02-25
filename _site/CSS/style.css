@@ -32,12 +32,10 @@ h1 {
 }
 
 h2{
-  font-size: 4vw;
+  font-size: 3vw;
   color: #00bcd4;
   margin-bottom: 1em;
-  text-align: center;
-  
-
+  font-weight: 100;
 }
 
 section, footer {
@@ -63,13 +61,6 @@ section, footer {
   padding: 0;
 }
 
-.padding {
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-top: 25vh;
-  padding-bottom: 15vh;
-}
-
 .top-banner{
   min-height: 100vh;
   background-size:cover;
@@ -77,6 +68,18 @@ section, footer {
   padding: 0;
 }
 /* These are the image banner modules */
+
+.banner {
+    padding: 15vh 5vw;
+}
+
+.banner.left {
+  padding-left: 0;
+}
+
+.banner.right {
+  padding-right: 0;
+}
 
 .banner-image {
     position: absolute;
@@ -86,7 +89,7 @@ section, footer {
 }
 
 .two-thirds {
-    width:66%;
+    width:60%;
 }
 
 .banner-image.left {
@@ -103,8 +106,16 @@ section, footer {
 
 .box {
   padding: 5%;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,1);
   z-index: 2;
+  max-width: 600px;
+}
+
+.box.left {
+  margin-right: auto;
+}
+.box.right {
+  margin-left:auto;
 }
 
 .nav-box {

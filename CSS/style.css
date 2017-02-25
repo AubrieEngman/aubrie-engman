@@ -27,7 +27,6 @@ h1 {
   font-size: 7vw;
   color: white;
   margin-bottom: 0.5em;
-  background-color: rgba(150, 150, 150, .4);
   text-align: center;
 }
 
@@ -36,6 +35,12 @@ h2{
   color: #00bcd4;
   margin-bottom: 1em;
   font-weight: 100;
+  text-align: center;
+}
+
+.transparent{
+  rgba(150, 150, 150, .4);
+
 }
 
 section, footer {
@@ -66,6 +71,7 @@ section, footer {
   background-size:cover;
   color:#fff;
   padding: 0;
+  position: relative;
 }
 /* These are the image banner modules */
 
@@ -120,7 +126,7 @@ section, footer {
 
 .nav-box {
   padding: 0.5%;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(0,0,0,0.5);
   z-index: 2;
 
 }
@@ -145,6 +151,39 @@ section, footer {
   opacity: 1;
 }
 
+.top-banner video {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  height:100%;
+  width: 100%;
+  z-index: -10;
+}
+
+
+/* Background-images */
+
+.image-1,
+.image-2,
+.image-3 {
+  padding-bottom: 23%;
+  background-size:cover;
+}
+
+.image-1 {
+  background-image: url('/images/donut-pool.jpg');
+}
+
+.image-2 {
+  background-image: url('/images/institute-of-code-pool.jpg');
+}
+
+.image-3 {
+  background-image: url('/images/sunset-pool.jpg');
+}
 
 /* ------------------- Header and Footer---------------*/
   header {
@@ -161,7 +200,7 @@ section, footer {
   }
 
   header nav a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 2%;
     color: #00bcd4;
 ;

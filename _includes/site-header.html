@@ -1,5 +1,10 @@
-<section class="top-banner" style="background-image: url({{ page.banner-image }})">
-  <header>
+<section class="top-banner grid">
+
+  <video controls autoplay loop >
+  <source src="{{page.video_path}}" type="video/mp4">
+  </video>
+
+  <header class="col-12">
     <!-- This is where the logo and nav go -->
 
     <nav class="no-padding nav-box">
@@ -11,7 +16,7 @@
     </nav>
   </header>
 
-  <div class="padding">
+  <div class="padding col-12-middle">
     <h1 class="animated slideInUp">{{ page.title }}</h1>
     <h2>{{ page.subtitle }}</h2>
   </div>

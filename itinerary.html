@@ -3,6 +3,7 @@ layout: default
 title: Itinerary
 subtitle: Ten Days of Paradise
 banner-image: /images/sunset.jpg
+video_path: /images/Aubrie-1.mp4
 days:
   - title: Day 1
     image: /images/activities.jpeg
@@ -55,48 +56,51 @@ days:
 
 
 {% for day in page.days %}
-<section class="banner centered padding">
   {% if day.image_position == "l" %}
-<div class="banner-image two-thirds left"
-style="background-image: url('{{day.image}}');">
-</div>
-  {% endif %}
-<div class="box">
-      <h2>{{day.title}}</h2>
-      <p>{{day.paragraph}}</p>
-      {{day.image_position}}
+  <section class="banner grid-middle right">
+    <div class="banner-image two-thirds left"
+    style="background-image: url('{{day.image}}');">
+    </div>
+
+    <div class="box right">
+          <h2>{{day.title}}</h2>
+          <p>{{day.paragraph}}</p>
+          {{day.image_position}}
+    </div>
+  </section>
+{% endif %}
+
+{% if day.image_position == "r" %}
+<section class="banner grid-middle left">
+  <div class="banner-image two-thirds right"
+  style="background-image: url('{{day.image}}');">
   </div>
 
-  {% if day.image_position == "r" %}
-<div class="banner-image two-thirds right"
-style="background-image: url('{{day.image}}');">
-</div>
+  <div class="box left">
+        <h2>{{day.title}}</h2>
+        <p>{{day.paragraph}}</p>
+        {{day.image_position}}
+  </div>
+</section>
+{% endif %}
 
-  {% endif %}
-  </section>
 {% endfor %}
 
-<section class="banner dark centered padding">
-<h2>Activities</h2>
-<p>Lorem  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<section class="banner dark centered padding grid-middle">
+  <div class="col">
+      <h2>Activities</h2>
+      <p>Lorem  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
 </section>
 
+<div class="grid no-padding no-margin">
 
-<video controls autoplay loop >
-<source src="/images/Aubrie-1.mp4" type="video/mp4">
-</video>
-</section>
-<div class="grid">
-
-  <div class="col-4">
-    <img src="images/donut-pool.jpg">
+  <div class="col-4 image-1">
   </div>
 
-  <div class="col-4">
-    <img src="images/institute-of-code-pool.jpg">
+  <div class="col-4 image-2">
   </div>
 
-
-  <div class="col-4">
-    <img src="images/sunset-pool.jpg">
+  <div class="col-4 image-3">
   </div>
+</div>

@@ -12,6 +12,7 @@ img {
 
 a{
   display: inline-block;
+  color: white;
   text-decoration: none;
 
 }
@@ -28,13 +29,11 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-}
-
 h2{
   font-size: 4vw;
-  color: #e74c3c ;
+  color: #00bcd4;
   margin-bottom: 0.5em;
-  
+
 }
 
 section, footer {
@@ -104,6 +103,33 @@ section, footer {
   z-index: 2;
 }
 
+.nav-box {
+  padding: 0.5%;
+  background-color: rgba (255,255,255,0.7);
+  z-index: 2;
+}
+
+
+.relative {
+  position:relative;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 255, 75, 1);
+  transition:all 2s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
 
 /* ------------------- Header and Footer---------------*/
   header {
@@ -112,6 +138,7 @@ section, footer {
 
   footer {
     background-color: rgb(60,60,60);
+    color: white;
   }
   /*These are my Nav links*/
   header nav {
